@@ -1,0 +1,64 @@
+1. Mapeamento de Cenários de Testes
+    Cenários de Testes:
+        1. Cadastro de Usuário:
+            - Cadastro de um novo usuário (candidato).
+            - Cadastro de um novo usuário (empresa).
+            - Validação de campos obrigatórios.
+            - Validação de e-mail.
+        2. Login:
+            - Login com credenciais válidas.
+            - Login com credenciais inválidas.
+            - Recuperação de senha.
+        3. Busca de Vagas:
+            - Busca por palavras-chave.
+            - Filtros por localização, tipo de vaga, salário, área de atuação, e nível de experiência.
+            - Visualização de detalhes da vaga.
+        4. Aplicação a Vagas:
+            - Aplicar a uma vaga com sucesso.
+            - Aplicar a uma vaga sem preencher campos obrigatórios.
+            - Cancelar aplicação.
+        5. Gerenciamento de Currículo:
+            - Upload de currículo.
+            - Edição de informações do currículo.
+            - Visualização do currículo.
+        6. Notificações e Alertas:
+            - Configuração de alertas de vagas.
+            - Recebimento de notificações.
+2. Estratégia de Testes
+    Tipos de Testes:
+        - Funcional: Verificar se as funcionalidades disponíveis estão operando conforme o esperado.
+        - Usabilidade: Avaliar a experiência do usuário, navegação e layout.
+        - Desempenho: Testar o tempo de resposta sob carga.
+        - Segurança: Verificar a proteção de dados do usuário.
+3. Plano de Teste
+    Objetivo do Teste: 
+        - Garantir que a aplicação InfoJobs funcione corretamente e atenda às necessidades dos usuários.
+    Escopo:
+        - Testes funcionais, usabilidade, desempenho e segurança.
+    Recursos Necessários:
+        - Equipe de testers.
+        - Ambiente de teste configurado.
+        - Acesso ao banco de dados para validações.
+    Cronograma:
+        - Preparação dos testes: 1 semana.
+        - Execução dos testes: 2 semanas.
+        - Análise dos resultados e relatório final: 1 semana.
+    Critérios de Aceitação:
+        - Nenhum bug crítico ou de segurança encontrado.
+        - 95% das funcionalidades testadas com sucesso.
+4. Identificação de Bugs
+    Exemplos de bugs que podem ser identificados:
+        - Falha na validação de campos obrigatórios durante o cadastro.
+        - Links quebrados em páginas.
+        - Funcionalidade de busca que não retorna resultados corretos.
+        - Problemas na responsividade do layout em dispositivos móveis.
+5. Melhorias Identificadas
+        - Interface: Melhorar a experiência do usuário, com um design mais intuitivo.
+        - Filtros de Busca: Adicionar mais filtros para busca de vagas.
+        - Notificações: Permitir que os usuários personalizem mais os tipos de notificações que desejam receber.
+        - Acessibilidade: Implementar melhorias de acessibilidade para usuários com deficiência.
+6. Parecer sobre a Aplicação
+    A aplicação InfoJobs apresenta um bom conjunto de funcionalidades que atende às necessidades básicas de candidatos
+    e empresas. Contudo, melhorias na usabilidade, na interface e na performance são essenciais para proporcionar uma
+    experiência mais fluida. Testes rigorosos devem ser conduzidos para identificar e corrigir bugs e garantir a 
+    segurança dos dados dos usuários.
