@@ -32,7 +32,7 @@ Descreva e automatize os seguintes cenários:\
 1 - Realizar a busca com o valor “69005-040”;\
 2 - Realizar a busca com o valor “Lojas Bemol”;
 
-> Devido a presença de captcha no sistema, foi necessário a intervenção manual no teste automatizado. Não é recomendado, pois reduz o grau de automação do teste."
+> Devido a presença de captcha no sistema, foi necessário a intervenção manual no teste automatizado. Não é recomendado, pois reduz o grau de automação do teste.
 
 Resultado: [Etapa II](https://github.com/ThiagoTribuzy/BSF-QA_Engineer/blob/main/etapa2.py)
 
