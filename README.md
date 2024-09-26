@@ -1,5 +1,5 @@
 # Processo Seletivo BSF - QA Engineer 
-=========
+
 ## Instalação
 Para a execução é necessário a instalação dos seguintes pacotes:
 
@@ -7,6 +7,7 @@ Para a execução é necessário a instalação dos seguintes pacotes:
 python -m pip install selenium
 python -m pip install requests
 ```
+##
 
 ### Etapa I - Fundamentos de Teste
 Nesta primeira etapa, queremos mapear sua capacidade analítica, de construção de estratégia e cenários em uma aplicação.
