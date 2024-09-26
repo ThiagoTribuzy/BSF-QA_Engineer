@@ -1,7 +1,7 @@
 # Processo Seletivo BSF - QA Engineer 
 =========
 ## Instalação
-Para a execuçao é necessário a instalação dos seguintes pacotes:
+Para a execução é necessário a instalação dos seguintes pacotes:
 
 ```sh
 python -m pip install selenium
@@ -20,7 +20,7 @@ Aplicação alvo: [infojobs.com.br](https://www.infojobs.com.br)
 5 - Liste melhorias que forem identificadas;
 6 - Forneça parecer sobre a aplicação.
 
-Resultado: [Etapa I]()
+Resultado: [Etapa I](https://github.com/ThiagoTribuzy/BSF-QA_Engineer/blob/main/etapa1.txt)
 
 ### Etapa II - Automação de Teste Web I
 
@@ -31,8 +31,8 @@ Descreva e automatize os seguintes cenários:
 1 - Realizar a busca com o valor “69005-040”;
 2 - Realizar a busca com o valor “Lojas Bemol”;
 
-> Devido a presença de captcha no sistema, foi necessário a intervenção manual no teste automatizado. Não é o recomendado, pois reduz o grau de automação do teste."
-Resultado: [Etapa II]()
+> Devido a presença de captcha no sistema, foi necessário a intervenção manual no teste automatizado. Não é recomendado, pois reduz o grau de automação do teste."
+Resultado: [Etapa II](https://github.com/ThiagoTribuzy/BSF-QA_Engineer/blob/main/etapa2.py)
 
 ### Etapa III - Automação de Teste Web II
 Nesta terceira etapa, queremos aprofundar nosso entendimento e compreender como seria sua construção em métodos de validação.
@@ -46,7 +46,7 @@ Descreva e automatize o seguinte fluxo:
 5 - Verifique a avaliação;
 6 - Verifique o valor;
 
-Resultado: [Etapa III]()
+Resultado: [Etapa III](https://github.com/ThiagoTribuzy/BSF-QA_Engineer/blob/main/etapa3.py)
 
 ### Etapa IV - Automação de Teste de API
 Nesta última etapa, queremos mapear o seu domínio de técnicas de testes em API.
@@ -58,4 +58,4 @@ Descreva e automatize os seguintes cenários:
 3 - Criação de um produto
 4 - Verificar se o produto foi criado
 
-Resultado: [Etapa IV]()
+Resultado: [Etapa IV](https://github.com/ThiagoTribuzy/BSF-QA_Engineer/blob/main/etapa4.py)
