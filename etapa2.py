@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 # import requests
 # import mimetypes
 
-class Etapa2(unittest.TestCase):
+class TestEtapaDois(unittest.TestCase):
     
     driver: Firefox | None = None
     
@@ -22,8 +22,8 @@ class Etapa2(unittest.TestCase):
         return super().tearDown()
     
     def test_correios_cep(self):  
-        inputCEP =  WebDriverWait(self.driver,20).until(EC.element_to_be_clickable((By.ID, 'endereco')))
-        inputCEP.send_keys('69005-040')
+        input_cep =  WebDriverWait(self.driver,20).until(EC.element_to_be_clickable((By.ID, 'endereco')))
+        input_cep.send_keys('69005-040')
         
         self.driver.execute_script("alert('Preencha o captcha.');")
         time.sleep(10)
@@ -54,31 +54,37 @@ class Etapa2(unittest.TestCase):
         #     except Exception as err:
         #         print("Exception: "+str(err))
         
-        logradouroNome = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[1]')
-        bairroDistrito = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[2]')
-        localidadeUF = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[3]')
+        logradouro_nome = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[1]')
+        bairro_distrito = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[2]')
+        localidade_uf = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[3]')
         cep = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[4]')
         
-        print("\n-----Busca por CEP-----\nLogradouro/Nome: "+logradouroNome.text+"\nBairro/Distrito: "+bairroDistrito.text+"\nLocalidade/UF: "+localidadeUF.text+"\nCEP: "+cep.text)
+        boolean_tmp = '69005-040' in self.driver.page_source
+        self.assertEqual(boolean_tmp,True,'CEP "69005-040" was not found on the page.')
+        
+        print("\n-----Busca por CEP-----\nLogradouro/Nome: "+logradouro_nome.text+"\nBairro/Distrito: "+bairro_distrito.text+"\nLocalidade/UF: "+localidade_uf.text+"\nCEP: "+cep.text)
                     
     def test_correios_logradouro(self):  
-        inputCEP =  WebDriverWait(self.driver,20).until(EC.element_to_be_clickable((By.ID, 'endereco')))
-        inputCEP.send_keys('Lojas Bemol')
+        input_cep =  WebDriverWait(self.driver,20).until(EC.element_to_be_clickable((By.ID, 'endereco')))
+        input_cep.send_keys('Lojas Bemol')
         
         self.driver.execute_script("alert('Preencha o captcha.');")
         time.sleep(50)
         
-        logradouroNome = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[1]')
-        bairroDistrito = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[2]')
-        localidadeUF = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[3]')
+        logradouro_nome = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[1]')
+        bairro_distrito = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[2]')
+        localidade_uf = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[3]')
         cep = self.driver.find_element(By.XPATH, '//*[@id="resultado-DNEC"]/tbody/tr/td[4]')
         
-        print("\n-----Busca por Nome-----\nLogradouro/Nome: "+logradouroNome.text+"\nBairro/Distrito: "+bairroDistrito.text+"\nLocalidade/UF: "+localidadeUF.text+"\nCEP: "+cep.text)
+        boolean_tmp = "Lojas Bemol" in self.driver.page_source
+        self.assertEqual(boolean_tmp,True,'Name "Lojas Bemol" was not found on the page.')
+        
+        print("\n-----Busca por Nome-----\nLogradouro/Nome: "+logradouro_nome.text+"\nBairro/Distrito: "+bairro_distrito.text+"\nLocalidade/UF: "+localidade_uf.text+"\nCEP: "+cep.text)
                     
 def suite():
     test_suite = unittest.TestSuite()
-    test_suite.addTest(Etapa2("test_correios_cep"))
-    test_suite.addTest(Etapa2("test_correios_logradouro"))
+    test_suite.addTest(TestEtapaDois("test_correios_cep"))
+    test_suite.addTest(TestEtapaDois("test_correios_logradouro"))
     return test_suite
 
 if __name__ == '__main__':
