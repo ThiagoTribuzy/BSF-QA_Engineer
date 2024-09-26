@@ -33,6 +33,7 @@ Descreva e automatize os seguintes cenários:
 2 - Realizar a busca com o valor “Lojas Bemol”;
 
 > Devido a presença de captcha no sistema, foi necessário a intervenção manual no teste automatizado. Não é recomendado, pois reduz o grau de automação do teste."
+
 Resultado: [Etapa II](https://github.com/ThiagoTribuzy/BSF-QA_Engineer/blob/main/etapa2.py)
 
 ### Etapa III - Automação de Teste Web II
